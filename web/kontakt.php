@@ -4,17 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kontakt | Pfotenfreunde Trier</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/kontakt.css" rel="stylesheet" type="text/css">
-    <link rel="alternate icon" type="image/svg" href="/img/favicon.svg">
-    <meta name="robots" content="nofollow">
-    <meta name="description" content="Beschreibung">
-    <script defer src="/scripts/navigation.js"></script>
-    <script defer src="/scripts/kontakt.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/kontakt.css" rel="stylesheet" type="text/css">
+    <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/kontakt.js"></script>
   </head>
   <body>
     <?php
-      include_once ("lib/headerNav.inc.php");
+      include_once ("../inc/headerNav.inc.php");
     ?>
 
     <main id="main">
@@ -88,7 +86,7 @@
     </main>
     
     <?php
-      include_once ("lib/footer.inc.php");
+      include_once ("../inc/footer.inc.php");
     ?>
   </body>
 </html>

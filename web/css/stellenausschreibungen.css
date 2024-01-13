@@ -37,6 +37,10 @@ label{
   color: darkgreen;
 }
 
+form{
+  min-width: 25vw;
+}
+
 textarea {
   /* vertikale vergrößerung des Textfeldes */
   resize: vertical; 

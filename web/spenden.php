@@ -14,7 +14,7 @@
   </head>
   <body>
     <?php
-      include_once ("lib/headerNav.inc.php");
+      include_once ("../inc/headerNav.inc.php");
     ?>
 
     <main id="main">
@@ -42,7 +42,7 @@
         <section id="spendenformular">
           <h1 class="centerAlign">Spendenformular</h1>
           <section id="formular">
-            <form action="lib/spendeVerarbeiten.php" method="POST" autocomplete="on">
+            <form action="../lib/spendeVerarbeiten.php" method="POST" autocomplete="on">
               <fieldset id="fieldBetrag">
                 <legend>Betrag</legend>
                 <label for="betrag">Betrag:</label>
@@ -109,7 +109,7 @@
                  
                 
                 <label for="geb">Geburtsdatum:</label>
-                <input type="date" id="geb" name="geb" required autocomplete="on">
+                <input type="date" id="geb" name="geb" required autocomplete="on" value="2006-06-15">
                 <label for="mail">E-Mail:</label>
                 <input type="email" id="mail" name="mail" required autocomplete="on" placeholder="beispiel@email.de">
               </fieldset>
@@ -124,7 +124,7 @@
     </main>
     
     <?php
-      include_once ("lib/footer.inc.php");
+      include_once ("../inc/footer.inc.php");
     ?>
   </body>
 </html>

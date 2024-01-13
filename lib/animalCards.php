@@ -132,7 +132,7 @@ function printCards ($anzahlCards, $tierArt, $tierNamen, $tierGroessen, $tierVor
     <li>
       <section class="card" id="$i">
         <div class="cardBild">
-          <img id="animalImg_$i" src="../img/tiere/$tierArt/$tierBild" alt="Bild von $tierName" >
+          <img id="animalImg_$i" src="img/tiere/$tierArt/$tierBild" alt="Bild von $tierName" >
         </div>
         <div class="cardText">
           <h2 id="animalName_$i">$tierName</h2>
@@ -148,9 +148,9 @@ function printCards ($anzahlCards, $tierArt, $tierNamen, $tierGroessen, $tierVor
           <!-- - - ><button class="btn" id="adoptBtn_$i">Adoptieren für $tierName</button>
           <button class="btn" id="giftBtn_$i">Sachspende für $tierName</button>
           <button class="btn" id="sponsorBtn_$i">Patenschaft für $tierName</button>< ! - - -->
-          <a href="/lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=adoptieren" class="adoptieren btn">Adoptieren</a>
-          <a href="/lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=sachspende" class="sachspende btn">Sachspende</a>
-          <a href="/lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=patenschaft" class="patenschaft btn">Patenschaft</a>
+          <a href="../lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=adoptieren" class="adoptieren btn">Adoptieren</a>
+          <a href="../lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=sachspende" class="sachspende btn">Sachspende</a>
+          <a href="../lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=patenschaft" class="patenschaft btn">Patenschaft</a>
         </div>
       </section>
     </li>

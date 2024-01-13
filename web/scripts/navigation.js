@@ -59,6 +59,7 @@ async function navBackground(){
   for(let child of topMenu.children){
     if(child.getAttribute('id') === pageName){
       // Fuege class "currentSite" zum Element hinzu
+      // currentSite ist in style.css definiert
       child.classList.toggle('currentSite');
     }
   }

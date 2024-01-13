@@ -4,16 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stellenausschreibungen | Pfotenfreunde Trier</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/stellenausschreibungen.css" rel="stylesheet" type="text/css">
-    <link rel="alternate icon" type="image/svg" href="/img/favicon.svg">
-    <meta name="robots" content="nofollow">
-    <meta name="description" content="Beschreibung der Webseite">
-    <script defer src="/scripts/navigation.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stellenausschreibungen.css" rel="stylesheet" type="text/css">
+    <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
+    <script defer src="scripts/navigation.js"></script>
   </head>
   <body>
     <?php
-      include_once ("lib/headerNav.inc.php");
+      include_once ("../inc/headerNav.inc.php");
     ?> 
     <main id="main">
       <h1>Stellenausschreibungen und Bewerbung</h1>
@@ -36,9 +34,9 @@
               <li> Belastbarkeit und Teamgeist<br></li>
                 <li> Bereitschaft zur Wochenendarbeit im Rahmen eines festgelegten<br></li>
         </ul>
-        <h3>Bewerbungsfrist: [Datum]</h3>
+        <h3>Bewerbungsfrist: [12.3.2024]</h3>
         </article>
-        <form action="lib/bewerbungVerarbeitung.php" method="post" autocomplete="on">
+        <form action="../lib/bewerbungVerarbeitung.php" method="post" autocomplete="on">
 
     <label for="Vorname">Vorname:</label><br>
     <input type="text" id="Vorname" name="Vorname" required placeholder="Vorname"><br>
@@ -47,10 +45,10 @@
     <label for="email">E-Mail:</label><br>
     <input type="email" id="email" name="email" required placeholder="beispiel@email.de"><br>
     <label for="Telefonnummer">Telefonnummer:</label><br>
-    <input type="tel" id="Telefonnummer" name="Telefonnummer" required pattern="[0-9]{10,14}" placeholder="0123456789"><br>
+    <input type="tel" id="Telefonnummer" name="Telefonnummer" pattern="[0-9]{10,14}" placeholder="0123456789"><br>
     <small>Bitte geben Sie eine gültige Telefonnummer ein (mindestens 10 Ziffern).</small><br>
     <label for="Handynummer">Handynummer:</label><br>
-    <input type="tel" id="Handynummer" name="Handynummer" required pattern="\+[0-9]{1,4}[0-9]{9,13}" placeholder="+491234567890"><br>
+    <input type="tel" id="Handynummer" name="Handynummer" pattern="\+[0-9]{1,4}[0-9]{9,13}" placeholder="+491234567890"><br>
     <small>Bitte geben Sie eine gültige Handynummer ein (beginnend mit '+' gefolgt von Landesvorwahl und Nummer).</small><br>
     <label for="Erfahrung">Berufserfahrung (Jahre):</label><br>
     <input type="number" id="Erfahrung" name="Erfahrung" required><br>
@@ -86,9 +84,9 @@
           <li> Teamfähigkeit und Zuverlässigkeit<br></li>
             <li> Bereitschaft zur Wochenendarbeit im Rahmen eines festgelegten Dienstplans<br></li>
     </ul>
-    <h3>Bewerbungsfrist: [Datum]</h3>
+    <h3>Bewerbungsfrist: [12.3.2024]</h3>
     </article>
-    <form action="lib/bewerbungVerarbeitung1.php" method="post" autocomplete="on">
+    <form action="../lib/bewerbungVerarbeitung.php" method="post" autocomplete="on">
 
 <label for="Vorname1">Vorname:</label><br>
 <input type="text" id="Vorname1" name="Vorname1" required placeholder="Vorname"><br>
@@ -100,10 +98,10 @@
 <input type="email" id="email1" name="email1" required placeholder="beispiel@email.de"><br>
 
 <label for="Telefonnummer1">Telefonnummer:</label><br>
-<input type="tel" id="Telefonnummer1" name="Telefonnummer1" required pattern="[0-9]{10,14}" placeholder="0123456789"><br>
+<input type="tel" id="Telefonnummer1" name="Telefonnummer1" pattern="[0-9]{10,14}" placeholder="0123456789"><br>
 <small>Bitte geben Sie eine gültige Telefonnummer ein (mindestens 10 Ziffern).</small><br>
 <label for="Handynummer1">Handynummer:</label><br>
-<input type="tel" id="Handynummer1" name="Handynummer1" required pattern="\+[0-9]{1,4}[0-9]{9,13}" placeholder="+491234567890"><br>
+<input type="tel" id="Handynummer1" name="Handynummer1" pattern="\+[0-9]{1,4}[0-9]{9,13}" placeholder="+491234567890"><br>
 <small>Bitte geben Sie eine gültige Handynummer ein (beginnend mit '+' gefolgt von Landesvorwahl und Nummer).</small><br>
 
 <label for="Erfahrung1">Berufserfahrung (Jahre):</label><br>
@@ -145,9 +143,9 @@
           <li> Affinität zu Tieren und Verständnis für Tierpflege<br></li>
             <li> Teamfähigkeit und Flexibilität<br></li>
     </ul>
-    <h3>Bewerbungsfrist: [Datum]</h3>
+    <h3>Bewerbungsfrist: [12.3.2024]</h3>
     </article>
-    <form action="lib/bewerbungVerarbeitung2.php" method="post" autocomplete="on">
+    <form action="../lib/bewerbungVerarbeitung.php" method="post" autocomplete="on">
 
 <label for="Vorname2">Vorname:</label><br>
 <input type="text" id="Vorname2" name="Vorname2" required placeholder="Vorname"><br>
@@ -159,10 +157,10 @@
 <input type="email" id="email2" name="email2" required placeholder="beispiel@email.de"><br>
 
 <label for="Telefonnummer2">Telefonnummer:</label><br>
-<input type="tel" id="Telefonnummer2" name="Telefonnummer2" required pattern="[0-9]{10,14}" placeholder="0123456789"><br>
+<input type="tel" id="Telefonnummer2" name="Telefonnummer2" pattern="[0-9]{10,14}" placeholder="0123456789"><br>
 <small>Bitte geben Sie eine gültige Telefonnummer ein (mindestens 10 Ziffern).</small><br>
 <label for="Handynummer2">Handynummer:</label><br>
-<input type="tel" id="Handynummer2" name="Handynummer2" required pattern="\+[0-9]{1,4}[0-9]{9,13}" placeholder="+491234567890"><br>
+<input type="tel" id="Handynummer2" name="Handynummer2" pattern="\+[0-9]{1,4}[0-9]{9,13}" placeholder="+491234567890"><br>
 <small>Bitte geben Sie eine gültige Handynummer ein (beginnend mit '+' gefolgt von Landesvorwahl und Nummer).</small><br>
 
 <label for="Erfahrung2">Berufserfahrung (Jahre):</label><br>
@@ -209,7 +207,7 @@
 </section>
     </main>
     <?php
-      include_once ("lib/footer.inc.php");
+      include_once ("../inc/footer.inc.php");
     ?> 
   </body>
 </html>

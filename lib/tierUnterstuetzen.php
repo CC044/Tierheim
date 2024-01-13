@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tier-Unterstützung | Pfotenfreunde Trier</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <!--<link href="/css/tierUnterstuetzen.css" rel="stylesheet" type="text/css">-->
-    <link rel="alternate icon" type="image/svg" href="/img/favicon.svg">
-    <meta name="robots" content="nofollow">
-    <meta name="description" content="Beschreibung der Webseite">
-    <script defer src="/scripts/navigation.js"></script>
+    <link href="../web/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="alternate icon" type="image/svg" href="../web/img/favicon.svg">
+    <script defer src="../web/scripts/navigation.js"></script>
   </head>
   <body>
     <?php
-      include_once ("headerNav.inc.php");
+      include_once ("../inc/headerNav.inc.php");
     ?>
 
     <main id="main">
@@ -68,7 +65,7 @@
       </p>
     </main>
     <?php
-      include_once ("footer.inc.php");
+      include_once ("../inc/footer.inc.php");
     ?>
   </body>
 </html>

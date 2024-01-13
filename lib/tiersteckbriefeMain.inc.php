@@ -1,5 +1,5 @@
 <?php
-include_once ("lib/animalCards.php");
+include_once ("animalCards.php");
 
 /** 
  * Generiert HTML Code für Tierkarten.

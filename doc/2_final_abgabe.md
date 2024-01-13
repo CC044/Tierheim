@@ -3,12 +3,18 @@ Der Punkt "Wenn Spender nicht materielle Spenden abgeben wollen, soll es auch m�
 
 Für die finale Ausarbeitung bitte **Zielgruppen und Funktionen** in **Listenform** angeben.
 
+## Funktionen
+Im Vergleich zur Zwischenabgabe wurden alle Funktionen außer des Web-Shops übernommen, da dieser nicht zu den Anforderungen eines Tierheims passt.
 
 ## Responsive Design
 Wie haben Sie diesen Punkt in die Realisierung integriert? Welche Maßnahmen haben Sie getroffen, welche Techniken haben Sie verwendet? Geben Sie ein oder mehrere Beispiele aus Ihrer Implementierung an, in Aufzählungsform: Aspekt, zugehörige Maßnahme.
-Bildschirmgrößen:
-- flex-box
-- Break points
+
+responsives Layout:
+- Flexbox-Container:
+  flexible Anpassung des Layouts bis zu einer bestimmten Breite des Bildschirmes
+  Positionierung der enthaltenen Elemente
+- Break points:
+  Anpassung an verschiedene Endgeräte mit verschiedenen Bildschirmbreiten
 - relative Größenangaben (%, rem, em) für Größen und Positionsangaben
 - Wortumbrüche + Silbentrennung (css)
 Steuerung und verschiedene Eingabemöglichkeiten mit Tastatur, Maus oder Touch:
@@ -55,3 +61,31 @@ Aspekt, zugehörige Maßnahme. Orientieren Sie sich an WCAG.
 - verschiedene Inputfelder für verschieden Funktionalitäten (date, email)
 - Rückmeldung bei erfolgreichen Aktionen oder Fehlermeldung
 - Unterstützung für Screenreader (Labels für Formelemente, Buttons, Links in schriftlicher Form)
+
+Unterstützung beim Navigieren:
+- Breadcrumbs
+- Tastatursteuerung/Touchsteuerung
+- anklickbare Elemente werden durch Veränderung des Cursors deutlich angezeigt
+- besuchte Links werden anders dargestellt
+- "hover"-Effekte bei anklickbaren Elementen
+
+Farbschema und Schrift:
+- angemessene Schriftgröße
+- Vordergrund und Hintergrund sind für Sehbeeinträchtigte gut erkennbar
+  (Kontrast: https://contrastchecker.com/)
+- deutliches, kontrastreiches hervorheben von Links
+- Animationen deaktivierbar für photosensitive Epileptiker
+
+Hilfestellung bei Eingaben:
+- kopieren in Zwischenablage Smartphone und PC
+- Unterstützung für Screenreader (Labels für Formelemente, Buttons, Links in schriftlicher Form)
+- Rückmeldung bei erfolgreichen Aktionen oder Fehlermeldung
+- "hover"-Effekte bei anklickbaren Elementen 
+- Fokus auf die ersten Elemente der Formulare bei Seitenaufruf
+- Formularattribute: required, autocomplete und placeholder
+- verschiedene Inputfelder für verschieden Funktionalitäten (date, email)
+
+weitere Punkte:
+- responsives Layout (mediaqueries, Flexboxen, relative Größenangaben)
+  -> kompatibel auch für andere Benutzeragenten
+- Bilder haben Textalternativen
