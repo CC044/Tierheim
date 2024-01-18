@@ -6,3 +6,7 @@ body {
 footer {
     margin-top: auto;
 }
+h1,h2,h3,p{
+  hyphens: auto; 
+  overflow-wrap: break-word; 
+}

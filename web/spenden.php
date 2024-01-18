@@ -7,8 +7,6 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/spenden.css" rel="stylesheet" type="text/css">
     <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
-    <meta name="robots" content="nofollow">
-    <meta name="description" content="Beschreibung">
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/spenden.js"></script>
   </head>
@@ -23,7 +21,7 @@
         <section id="linkeSeite">
           <section id="infos">
             <h2 class="centerAlign">Spendeninformationen</h2>
-            <p>Auf dieser Seite können Sie für die Arbeit des Tierheimes spenden. Damit finanzieren Sie unter anderem das Futter und die tierärztlichen Bahandlungen unserer Tiere. Um Ihre Spende abzugeben, können Sie entweder das Spendenformular auf dieser Seite benutzen oder direkt über die unten angegebenen Bankdaten an uns spenden.</p>
+            <p>Auf dieser Seite können Sie für die Arbeit des Tierheimes spenden. Damit finanzieren Sie unter anderem das Futter und die tierärztlichen Behandlungen für unsere Tiere. Um Ihre Spende abzugeben, können Sie entweder das Spendenformular auf dieser Seite benutzen oder direkt über die unten angegebenen Bankdaten an uns spenden.</p>
             <p>
               <strong>Spendenkonto</strong><br>
               Bank Trier<br>
@@ -107,7 +105,6 @@
                   </div>
                 </div>
                  
-                
                 <label for="geb">Geburtsdatum:</label>
                 <input type="date" id="geb" name="geb" required autocomplete="on" value="2006-06-15">
                 <label for="mail">E-Mail:</label>

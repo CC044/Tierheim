@@ -5,7 +5,6 @@ aside {
 }
 
 aside div {
-  /*width: 30%;*/
   margin: 1rem;
   border: solid #004d26 3px;
   border-radius: 6px;
@@ -27,14 +26,9 @@ aside img {
 #mitarbeiter h2 {
   text-align: center;
 }
-
 #mitarbeiter h3 {
   padding: 5px;
   text-align: center;
-  /*
-  border-top:solid #004d26 3px;
-  border-bottom:solid #004d26 3px;
-  */
   background-color: #004d26;
   color: white;
   border-radius: 6px;

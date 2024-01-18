@@ -25,14 +25,14 @@
 
           <img class="smallimg" src="img/index/pfoteinhand.jpg" alt="Bild von einer Hand, die eine Hunde Pfote hält">
           
-        <p>Sie möchten uns und unsere Schutzlinge unterstützen? Dann können Sie jederzeit uns eine Spende zukommen lassen diese werden unter anderem dafür genutzt die Tiere zu verpflegen und die tierärztlichen Behandlungen unserer Tiere zu ermöglichen. Wir würden uns über deine Unterstützung freuen. <a href="spenden.php">mehr</a></p>
+        <p>Sie möchten uns und unsere Schutzlinge unterstützen? Dann können Sie jederzeit uns eine Spende zukommen lassen diese werden unter anderem dafür genutzt die Tiere zu verpflegen und die tierärztlichen Behandlungen unserer Tiere zu ermöglichen. Wir würden uns über Ihre Unterstützung freuen. <a href="spenden.php">mehr</a></p>
       </section>
       <article>
         <h2>Bildungsveranstaltung</h2>
         
           <img class="img" src="img/index/smartdog.jpg" alt="Bild von einem Hund und einer Frau beim lernen">
           
-        <p>Am <strong>24.2.2024</strong> findet wieder eine unserer Bildungsveranstaltungen statt! Also wenn Sie vorhaben sich ein Tier zuzulegen oder bereits ein Tierhalter sind, können Sie bei uns vorbeikommen und von einem experten die wichtigsten tricks der Tierhaltung erfahren. Auch Fragen sind willkommen und werden Tiefgehend beantwortet. </p>
+        <p>Am <strong>24.2.2024</strong> findet wieder eine unserer Bildungsveranstaltungen statt! Also wenn Sie vorhaben sich ein Tier zuzulegen oder bereits ein Tierhalter sind, können Sie bei uns vorbeikommen und von einem Experten die wichtigsten Tricks der Tierhaltung erfahren. Auch Fragen sind willkommen und werden ausführlich beantwortet. </p>
       </article>  
       <article>
         <h2>Tag der offenen Tür</h2>
@@ -46,19 +46,19 @@
        
           <Img class="img" src="img/index/wir.jpg" alt="Bild von zwei Pflegern mit drei Hunden">
           
-        <p>Du arbeitest gerne mit Tieren, bist engagiert und kannst gut in einem <a href="mitarbeiter.php">Team</a> mit flachen Hierarchie Verhältnissen arbeiten? Dann brauchen wir dich. Wir arbeiten tagtäglich mit Liebe und Leidenschaft für das Wohlergehen unserer Schützlinge. Möchtest du uns tatkräftig unterstützen und ein Teil unseres Teams werden? Dann melde dich doch gerne bei uns!</p>
+        <p>Du arbeitest gerne mit Tieren, bist engagiert und kannst gut in einem <a href="mitarbeiter.php">Team</a> mit flachem Hierarchieverhältnis arbeiten? Dann brauchen wir dich. Wir arbeiten tagtäglich mit Liebe und Leidenschaft für das Wohlergehen unserer Schützlinge. Möchtest du uns tatkräftig unterstützen und ein Teil unseres Teams werden? Dann melde dich doch gerne bei uns!</p>
         <article>
-          <!-- Teil der stellenausschreibung/hilfsstelle mit link zur vollen seite -->
+          <!-- Teil der Stellenausschreibung mit link zur vollen Seite -->
           <h3>Tierpfleger (m/w/d) Abteilung Katzen</h3>
           <p><strong>|Vollzeit|fest Anstellung|</strong> Wir suchen aktuell einen Tierpfleger / eine Tierpflegerin mit abgeschlossener Ausbildung für unsere Katzenabteilung.  <a href="stellenausschreibungen.php">mehr</a></p>
         </article>
         <article>
-          <!-- Teil der stellenausschreibung/hilfsstelle mit link zur vollen seite -->
+          <!-- Teil der Stellenausschreibung mit link zur vollen Seite -->
           <h3>Tierpfleger (m/w/d) Abteilung Hunde</h3>
           <p><strong>|Vollzeit|fest Anstellung|</strong> Wir suchen aktuell einen Tierpfleger / eine Tierpflegerin mit abgeschlossener Ausbildung für unsere Hundeabteilung. <a href="stellenausschreibungen.php">mehr</a></p>
         </article>
         <article>
-          <!-- Teil der stellenausschreibung/hilfstelle mit link zur vollen seite -->
+          <!-- Teil der Stellenausschreibung mit link zur vollen Seite -->
           <h3>Kundenbetreuer (m/w/d)</h3>
           <p><strong>|Vollzeit|fest Anstellung|</strong> Wir suchen ein Kundenbetreuer / eine Kundenbetreuerin mit Ausbildung im Bereich Kundenmanagement.  <a href="stellenausschreibungen.php">mehr</a></p>
         </article>

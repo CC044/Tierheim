@@ -1,6 +1,6 @@
 <?php
 
-  // Überprüfe, ob die aktuelle Datei im "lib"-Ordner liegt
+  // Ueberpruefe, ob aktuelle Datei im "lib"-Ordner liegt (um Pfade zu garantieren)
   if (strpos(getcwd(), "lib") == true) {
     $webPath = "../web/";
   } else {
@@ -33,19 +33,34 @@
         <li id="stellenausschreibungen.php"><a href="{$webPath}stellenausschreibungen.php">Stellenausschreibungen</a></li>
       </ul>
     </nav>
+    <noscript>
+      <a href="https://blog.hubspot.de/website/javascript-aktivieren#hs_cos_wrapper_post_body" target="_blank" rel="noreferrer noopener">Javascript ist deaktiviert</a>. Einige Funktionen sind eingeschränkt.
+    </noscript>
   HTML;
   
-  // Breadcrumbs //
+  // Breadcrumbs
+  /** 
+   * Generiert individuelle Breadcrumbs.
+   * Schaue, ob Parameter existieren und filtere nach diesen
+   * im else-Teil identifiziere Dateiname und filtere nach diesen
+   * 
+   * es wird ein Breadcrumbs-Element im echo-Teil generiert
+   * 
+   */
+  // Seiten-URI auslesen
   $pageURI = $_SERVER['REQUEST_URI'];
   $pageName = pathinfo($pageURI, PATHINFO_FILENAME);
   
-  // parameter pruefen
+  // Parameter pruefen
   if (!empty($_GET)) {
       switch (true) {
           case isset($_GET['kategorie']):
               $kategorie = $_GET['kategorie'];
               $kategorie = htmlspecialchars($kategorie);
               echo "<div class=\"breadcrumb\"><a href=\"{$webPath}index.php\">Start</a> ⮞ Tiersteckbriefe ⮞ " . ucfirst($kategorie) . "</div>";
+              break;
+          case isset($_GET['name']):
+            echo "<div class=\"breadcrumb\"><a href=\"{$webPath}index.php\">Start</a> ⮞ Tiersteckbriefe ⮞ Bestätigung</div>";
               break;
           case isset($_GET['weitere_parameter_hier_abfangen']):
               break;
@@ -54,11 +69,15 @@
               break;
       }
   } else {
+      // im else-Teil identifiziere Dateiname und filtere nach diesen
       // Keine GET parameter vorhanden
       switch ($pageName) {
           // Ausblenden auf der Startseite
           case "index":
           case "":
+              break;
+          case "bewerbungVerarbeitung";
+            echo "<div class=\"breadcrumb\"><a href=\"{$webPath}index.php\">Start</a> ⮞ <a href=\"{$webPath}stellenausschreibungen.php\">Stellenausschreibungen</a> ⮞ Bewerbungsstatus</div>";
               break;
           case "spendeVerarbeiten";
               echo "<div class=\"breadcrumb\"><a href=\"{$webPath}index.php\">Start</a> ⮞ <a href=\"{$webPath}spenden.php\">Spenden</a> ⮞ Spendenstatus</div>";

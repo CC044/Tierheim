@@ -101,8 +101,7 @@
           </p>
           </div>
         </aside>
-      </section>
-      
+      </section>      
     </main>
 
     <?php

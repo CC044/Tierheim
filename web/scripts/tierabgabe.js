@@ -27,7 +27,6 @@ tierabgabeSenden.addEventListener("click", async () => {
  * Sicherstellung, dass Findling und Haustier nicht gelichzeitig gechecked sind 
  *
 */
-
 const checkFindling = document.getElementById("find");
 
 checkFindling.addEventListener("click", async () => {

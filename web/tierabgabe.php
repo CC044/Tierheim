@@ -26,7 +26,6 @@
       <form name="tierabgabeFormular" autocomplete="on">
         <fieldset>
           <legend>Angaben zum Tier</legend>
-
           <div>
           <label for="tierart">Tierart:</label>
           <select id="tierart" name="tierart" autofocus>
@@ -36,13 +35,13 @@
           </select>
           </div>
           <div>
-          <input type="checkbox" id="verletzt" name="tierzustand" value="verletzung"><label for="verletzt">Das Tier hat eine Verletzung</label>
+            <input type="checkbox" id="verletzt" name="tierzustand" value="verletzung"><label for="verletzt">Das Tier hat eine Verletzung</label>
           </div>
           <div>
             <input type="checkbox" id="find" name="findling" value="findling"><label for="find">Das Tier ist ein Findling</label>
           </div>
           <div>
-          <input type="checkbox" id="haustier" name="haustier" value="haustier"><label for="haustier">Das Tier ist mein Haustier</label>
+            <input type="checkbox" id="haustier" name="haustier" value="haustier"><label for="haustier">Das Tier ist mein Haustier</label>
           </div>
         </fieldset>
 

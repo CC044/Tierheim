@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tier-Unterstützung | Pfotenfreunde Trier</title>
     <link href="../web/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../web/css/tiersteckbriefe.css" rel="stylesheet" type="text/css">
     <link rel="alternate icon" type="image/svg" href="../web/img/favicon.svg">
     <script defer src="../web/scripts/navigation.js"></script>
   </head>
@@ -61,7 +62,6 @@
       <p>
         Besuche uns während unserer Öffnungszeiten: <br>
         Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag von 10:00 bis 18:00 <br>
-        zur Abwicklung.
       </p>
     </main>
     <?php

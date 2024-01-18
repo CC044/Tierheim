@@ -35,6 +35,8 @@ Dann PHP-Server starten mit
 php -S 127.0.0.1:8080
 ```
 
+Dann zu [localhost/](http://localhost:8080/web/index.php) navigieren.
+
 ## Lizenz
 
 Unlicensed

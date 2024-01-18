@@ -10,30 +10,32 @@
   <script defer src="../web/scripts/navigation.js"></script>
 </head>
 <body>
-   <?php
-      include_once ("../inc/headerNav.inc.php");
-      ?> 
+  <?php
+    include_once ("../inc/headerNav.inc.php");
+  ?> 
   <main id="main">
     <?php
-$Vorname = $Nachname = $Email = '';
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    foreach ($_POST as $key => $value) {
-        if (preg_match('/^Vorname/', $key)) {
-            $Vorname = htmlspecialchars($value);
-        } elseif (preg_match('/^Nachname/', $key)) {
-            $Nachname = htmlspecialchars($value);
-        } elseif (preg_match('/^email/', $key)) {
-            $Email = htmlspecialchars($value);
-        }
-    }   
-}
-      echo "<h1>Bewerbung erfolgreich abgeschickt!</h1>";
-      $Bewerbunginfo = "<p>" . "Liebe/r $Vorname $Nachname," . "<br>" . "vielen Dank für ihre Interesse. Ihre Bewerbung wurde an uns übermittelt und wir werden uns innerhalb weniger Wochen nach Ende der Bewerbungsfrist bei ihnen auf ihrer E-Mail-Adresse $Email melden." . "</p>";
-      echo $Bewerbunginfo;
+    // Formulareingaben bereinigen
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+    }
+      
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+      $Vorname = test_input($_POST["Vorname"]);
+      $Nachname = test_input($_POST["Nachname"]);
+      $Email = test_input($_POST["email"]);
+    }
+      
+    echo "<h1>Bewerbung erfolgreich abgeschickt!</h1>";
+    $Bewerbunginfo = "<p>" . "Liebe/r $Vorname $Nachname," . "<br>" . "vielen Dank für ihre Interesse. Ihre Bewerbung wurde an uns übermittelt und wir werden uns innerhalb weniger Wochen nach Ende der Bewerbungsfrist bei ihnen auf ihrer E-Mail-Adresse $Email melden." . "</p>";
+    echo $Bewerbunginfo;
     ?>
   </main>
   <?php
-      include_once ("../inc/footer.inc.php");
-      ?> 
+    include_once ("../inc/footer.inc.php");
+  ?> 
 </body>
 </html>

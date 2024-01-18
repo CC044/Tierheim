@@ -4,9 +4,6 @@ const tiersteckSubBtn = document.getElementById('tiersteckSubBtn');
 const labelSub = document.getElementById('labelSub');
 tiersteckSubBtn.addEventListener('mousedown', toggleSubmenu);
 labelSub.addEventListener('mousedown', toggleSubmenu);
-/* Touchstart ist nicht getestet. Hiermit sollte es funktionieren.
-tiersteckSubBtn.addEventListener('touchstart', toggleSubmenu);
-labelSub.addEventListener('touchstart', toggleSubmenu); */
 const submenu = document.getElementById('submenu');
 let newSubmenuState = false;
 

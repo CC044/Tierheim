@@ -47,7 +47,7 @@
       }
 
       //Spendenbenachrichtigung
-      echo "<h1>Spenden erfolgreich abgeschickt!</h1>";
+      echo "<h1>Spende erfolgreich abgeschickt!</h1>";
 
       $Spendeninfo = "<p id='nachricht'>"."Liebe/r $vorname $nachname,"."<br>"."vielen Dank für deine $zeitintervall. Es wurden $betrag € von deinem Konto bei der $kreditinstitut abgebucht."."</p>";
 
