@@ -1,6 +1,8 @@
 <?php
 
   // Ueberpruefe, ob aktuelle Datei im "lib"-Ordner liegt (um funktionierende (relative) Pfade zu garantieren)
+  // getcwd() zeigt das aktuelle Verzeichnis an (get current working directory)
+  // kommt "lib" vor, dann wechsle zu "web"
   if (strpos(getcwd(), "lib") == true) {
     $webPath = "../web/";
   } else {
@@ -60,13 +62,14 @@
   // Seiten-URI auslesen
   $pageURI = $_SERVER['REQUEST_URI'];
   $pageName = pathinfo($pageURI, PATHINFO_FILENAME);
-  
+
   // Parameter pruefen
   if (!empty($_GET)) {
       switch (true) {
           case isset($_GET['kategorie']):
               $kategorie = $_GET['kategorie'];
               $kategorie = htmlspecialchars($kategorie);
+              // Funktion ucfirst() wandelt erstes Zeichen in Großbuchstaben um
               echo "<div class=\"breadcrumb\"><a href=\"{$webPath}index.php\">Start</a> ⮞ Tiersteckbriefe ⮞ " . ucfirst($kategorie) . "</div>";
               break;
           case isset($_GET['name']):

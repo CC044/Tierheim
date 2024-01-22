@@ -145,9 +145,7 @@ function printCards ($anzahlCards, $tierArt, $tierNamen, $tierGroessen, $tierVor
           <p>$tierBeschreibung</p>
         </div>
         <div class="cardButtons">
-          <!-- - - ><button class="btn" id="adoptBtn_$i">Adoptieren für $tierName</button>
-          <button class="btn" id="giftBtn_$i">Sachspende für $tierName</button>
-          <button class="btn" id="sponsorBtn_$i">Patenschaft für $tierName</button>< ! - - -->
+          <!-- EDIT: Kommentar entfernt zur Lesbarkeit -->
           <a href="../lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=adoptieren" class="adoptieren btn">Adoptieren</a>
           <a href="../lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=sachspende" class="sachspende btn">Sachspende</a>
           <a href="../lib/tierUnterstuetzen.php?name=$tierName&spendeAktion=patenschaft" class="patenschaft btn">Patenschaft</a>
