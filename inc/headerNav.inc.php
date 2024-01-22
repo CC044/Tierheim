@@ -1,13 +1,23 @@
 <?php
 
-  // Ueberpruefe, ob aktuelle Datei im "lib"-Ordner liegt (um Pfade zu garantieren)
+  // Ueberpruefe, ob aktuelle Datei im "lib"-Ordner liegt (um funktionierende (relative) Pfade zu garantieren)
   if (strpos(getcwd(), "lib") == true) {
     $webPath = "../web/";
   } else {
     $webPath = "";
   }
 
-  // Header und Navigationsleiste rendern
+  /**
+   * Header und Navigationsleiste rendern
+   * @param string $webPath Seitenurl zum web/ Ordner
+   *
+   * aria-expanded zeigt (offen/geschlossen) Zustand
+   * des Untermenues an
+   * .submenu wird dann ein- / ausgeblendet (funktioniert
+   * nur mit aktiviertem JS))
+   * label (und button) wird vom screenreader erfasst
+   *
+   */
   echo <<<HTML
     <header>
       <a href="{$webPath}index.php">
@@ -20,7 +30,6 @@
         <li id="index.php"><a href="{$webPath}index.php">Startseite</a></li>
         <li id="tiersteckbriefe.php"><a href="#">Tiersteckbriefe…</a>
           <button id="tiersteckSubBtn" title="Untermenü öffnen oder schließen" type="button"></button><label id="labelSub" for="tiersteckSubBtn" title="Untermenü öffnen oder schließen">⮟</label>
-          <!-- https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
           <ul id="submenu" class="submenu" aria-expanded="false">
             <li><a href="{$webPath}tiersteckbriefe.php?kategorie=hunde">Hunde</a></li>
             <li><a href="{$webPath}tiersteckbriefe.php?kategorie=katzen">Katzen</a></li>
@@ -34,6 +43,7 @@
       </ul>
     </nav>
     <noscript>
+    <!-- Nutzer hinweisen, dass Javascript deaktivert ist -->
       <a href="https://blog.hubspot.de/website/javascript-aktivieren#hs_cos_wrapper_post_body" target="_blank" rel="noreferrer noopener">Javascript ist deaktiviert</a>. Einige Funktionen sind eingeschränkt.
     </noscript>
   HTML;
