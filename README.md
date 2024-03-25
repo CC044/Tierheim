@@ -14,9 +14,9 @@ Abgabe am 19 Jan 2024.
 ## Entwickler
 | Name | Matrikelnr | E-Mail |
 | --- | --- | --- |
-|Andre Greb | 974532 | ndgr4287&#64;hochschule-trier.de |
-|Christian Buchmann | 969614 | buchmanc&#64;hochschule-trier.de |
-|Jo Weber | 981185 | jxwb4777&#64;hochschule-trier.de |
+|Andre Greb | ****** | ***&#64;hochschule-trier.de |
+|Christian Buchmann | ****** | ***&#64;hochschule-trier.de |
+|Jo Weber | ****** | ***&#64;hochschule-trier.de |
 
 ## Betreuer
 
